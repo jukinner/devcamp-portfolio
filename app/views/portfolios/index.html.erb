@@ -1,8 +1,6 @@
 <h1>Portfolio Items</h1>
 
-
 <%= link_to "Create New Item", new_portfolio_url %>
-
 
 <% @portfolio_items.each do |portfolio_item| %>
   <p><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
