@@ -55,4 +55,4 @@ gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
-gem 'jkinner_view_tool', git: 'https://github.com/jukinner/jkinner_view_tool' 
+gem 'jkinner_view_tool', '~> 0.1.0'
