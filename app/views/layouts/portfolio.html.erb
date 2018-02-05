@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -11,20 +13,13 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav", location: 'top' %>
-
-    <% if current_user.is_a?(User) %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Register", new_user_registration_path %>
-      <%= link_to "Login", new_user_session_path %>
-    <% end %>
+    <%= render 'shared/portfolio_nav' %>
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
 
-    <%= source_helper("portfolio") %>
+    <%= render 'shared/portfolio_footer' %>
+
+    <%= source_helper("application") %>
   </body>
 </html>
