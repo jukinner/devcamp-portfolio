@@ -6,6 +6,9 @@ end
 
 puts "3 Topics created"
 
+User.create!(name:"Justin Kinner", email:"jukinner@gmail.com",password:"12345678",password_confirmation:"12345678",role:"siteadmin")
+
+puts "User created"
 
 10.times do |blog|
   Blog.create!(
