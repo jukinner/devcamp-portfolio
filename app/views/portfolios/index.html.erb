@@ -2,6 +2,9 @@
   <div class="container">
     <%= source_helper("alert alert-warning") %>
 
+    <<h3>Web Applications, Companies and Websites that I built personally</h3>
+    <hr>
+
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
