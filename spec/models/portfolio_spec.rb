@@ -5,34 +5,27 @@ RSpec.describe Portfolio, type: :model do
 
   describe 'creation' do 
     before do
-      @blog = blog
+      @portfolio = portfolio
     end
 
     it 'can be created' do
-      expect(@blog).to be_valid
+      expect(@portfolio).to be_valid
     end
   end
 
   describe 'validations' do
+    before do
+      @portfolio = portfolio
+    end
+
     it 'can not be created without a body' do
-      @blog.body = nil
-      expect(@blog).to_not be_valid
+      @portfolio.body = nil
+      expect(@portfolio).to_not be_valid
     end
     
     it 'can not be created without a title' do
-      @blog.title = nil
-      expect(@blog).to_not be_valid
-    end
-
-    it 'Title must accept a string' do
-      @blog.title = 123456789
-      expect(@blog).to_not be_valid
-    end
-
-    it 'Title must accept a string' do
-      @blog.body = 123456789
-      expect(@blog).to_not be_valid
+      @portfolio.title = nil
+      expect(@portfolio).to_not be_valid
     end
   end
-
 end

@@ -4,29 +4,25 @@ FactoryBot.define do
   end
 
   factory :user do
-    first_name 'Jon'
-    last_name 'Snow'
+    name "Jon Snow"
     email { generate :email }
     password "asdfasdf"
     password_confirmation "asdfasdf"
-    phone "5555555555"
   end
 
-  factory :admin_user, class: "AdminUser" do
-    first_name 'Admin'
-    last_name 'User'
-    email { generate :email }
-    password "asdfasdf"
-    password_confirmation "asdfasdf"
-    phone "5555555555"
-  end
+#   factory :admin_user class: "site_admin" do
+#     name "Admin User"
+#     email { generate :email }
+#     password "asdfasdf"
+#     password_confirmation "asdfasdf"
+#     roles "site_admin"
+#   end
 
-  factory :non_authorized_user, class: "User" do
-    first_name 'Non'
-    last_name 'Authorized'
-    email { generate :email }
-    password "asdfasdf"
-    password_confirmation "asdfasdf"
-    phone "5555555555"
-  end
+#   factory :non_authorized_user, class: "User" do
+#     name "Non Authorized"
+#     email { generate :email }
+#     password "asdfasdf"
+#     password_confirmation "asdfasdf"
+#     roles
+#   end
 end
