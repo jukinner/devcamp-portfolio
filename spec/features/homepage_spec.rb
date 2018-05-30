@@ -39,7 +39,7 @@ describe 'Navigation' do
   #               )
   # end
 
-  it 'Navigation bar changes once someone is logged in' do
+  it 'A user can log in and Navigation bar changes once logged in' do
     click_on "Login"
     login_as(user, :scope => :user)
     click_button 'Log in'
