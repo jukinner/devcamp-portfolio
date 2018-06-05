@@ -21,7 +21,7 @@ class PortfolioPage < BaseClass
   end
 
   def blog_button()
-    find_element_with_wait(xpath: "//a[@class='btn btn-secondary']").click()
+    find_element_with_wait(xpath: "//a[@class='btn btn-secondary'][text()='My Blog']").click()
   end
   
   def about_me_button()
@@ -41,6 +41,6 @@ class PortfolioPage < BaseClass
   end
 
   def masthead_identifier()
-    find_element_with_wait(xpath: "//h1[@class='jumbotron-heading'][text()='Web Applications, Companies and Websites that I built personally']")
+    find_element_with_wait(xpath: "//h1[@class='jumbotron-heading'][text()='My Portfolio']")
   end
 end

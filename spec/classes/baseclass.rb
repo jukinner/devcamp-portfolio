@@ -71,11 +71,11 @@ class BaseClass
   end
 
   def blog_identifier()
-    find_element_with_wait(xpath: "//h1[contains(text(),'My Blog')]")
+    find_element_with_wait(xpath: "//h1[contains(text(),'Code.Build.Learn.')][@class='blog-title']")
   end
 
   def portfolio_identifier()
-    find_element_with_wait(xpath: "//h1[text()='My Portfolio']")
+    find_element_with_wait(xpath: "//h3[text()='Web Applications, Companies and Websites that I built personally']")
   end
 
   def navicon()
