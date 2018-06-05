@@ -87,7 +87,7 @@ class BaseClass
   end
 
   def contact_identifier()
-    find_element_with_wait(xpath: "//h1[text()='Contact Me']")
+    find_element_with_wait(xpath: "//h1[text()='Would you like to work together?']")
   end
 
   def get_title()
