@@ -17,7 +17,7 @@ describe 'PortfolioPage' do
     expect(@browser.portfolio_identifier.displayed?).to eq(true)
   end
 
-  xit 'doesn\'t show masthead to admins' do
+  it 'does not show masthead to admins' do
     @browser.login_on_portfolio()
     expect(@browser.masthead_identifier).to eq(false)
   end
@@ -36,7 +36,7 @@ describe 'PortfolioPage' do
     expect(@browser.about_identifier.displayed?).to eq(true)
   end
 
-  xit 'logs in from portfolio page' do
+  it 'logs in from portfolio page' do
     @browser.login_on_portfolio()
     @browser.open_navbar()
     expect(@browser.login_link).to eq(false)

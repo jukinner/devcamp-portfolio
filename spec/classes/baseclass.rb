@@ -15,7 +15,7 @@ class BaseClass
     @driver.navigate.to url 
   end
 
-  def write_things(element, writing)
+  def type_things_out(element, writing)
     element.send_keys writing
   end
 
@@ -40,10 +40,10 @@ class BaseClass
     login_link.click() if using_link
     
     emailfield = find_element_with_wait(xpath: '//*[@id="user_email"]', "time" => 2)
-    write_things(emailfield, email)
+    type_things_out(emailfield, email)
 
     passwordfield = find_element_with_wait(xpath: '//*[@id="user_password"]')
-    write_things(passwordfield, password)
+    type_things_out(passwordfield, password)
     
     submitbutton = find_element_with_wait(xpath: "//input[@class='btn btn-primary']")
     submitbutton.click
@@ -88,6 +88,10 @@ class BaseClass
 
   def contact_identifier()
     find_element_with_wait(xpath: "//h1[text()='Would you like to work together?']")
+  end
+
+  def new_blog_identifier 
+    find_element_with_wait(xpath: "//a[@href='/blogs/a-title']")
   end
 
   def get_title()

@@ -1,0 +1,92 @@
+
+Blog Page
+[32m  goes to the blogs page[0m
+[32m  makes sure users must be signed in to write new blogs[0m
+[32m  logs in from blogs page and navigates back to blogs[0m
+[33m  writes a new blog (PENDING: Temporarily skipped with xit)[0m
+[33m  tries to write a blog without a title (PENDING: Temporarily skipped with xit)[0m
+[33m  tries to write a blog without a body (PENDING: Temporarily skipped with xit)[0m
+[32m  navigates to github[0m
+
+HomePage
+[32m  Goes to the homepage[0m
+[32m  navigates to about me page via button[0m
+[32m  navigate to contact page[0m
+
+Login
+[32m  log in as an admin[0m
+[32m  attempts log in with incorrect info[0m
+
+New user Registering
+[32m  creates a new user[0m
+[32m  tries to create a user with too short of a password[0m
+[32m  tries to create a user with wrong password confirmation[0m
+[32m  tries to create a user with no name[0m
+[32m  tries to create a user with no email[0m
+
+PortfolioPage
+[32m  goes to portfolio page[0m
+[32m  does not show masthead to admins[0m
+[32m  shows masthead to guests[0m
+[32m  goes to blog via button[0m
+[32m  goes to about me via button[0m
+[32m  logs in from portfolio page[0m
+[32m  goes to show of a portfolio[0m
+[32m  goes to all portfolios from the show page[0m
+
+Blog Page
+[32m  An admin can log in[0m
+[32m  Blog can be created[0m
+
+Homepage
+[32m  login button is present[0m
+[32m  Login button can be clicked on[0m
+
+Navigation
+[32m  A user can log in and Navigation bar changes once logged in[0m
+
+Porfolio Page
+[32m  An admin can log in[0m
+[32m  Portfolio can be created[0m
+
+navigate
+  homepage
+[32m    can be reached successfully[0m
+
+Blog
+  creation
+[32m    a blog can be created[0m
+
+Portfolio
+  creation
+[32m    can be created[0m
+  validations
+[32m    can not be created without a body[0m
+[32m    can not be created without a title[0m
+
+User
+  creation
+[32m    user can be created[0m
+[32m    admin user can be created[0m
+  validations
+[32m    cannot be created without a name[0m
+[32m    can not be created without password[0m
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+[33m
+  1) Blog Page writes a new blog[0m
+     [36m# Temporarily skipped with xit[0m
+[36m     # ./spec/UX_tests/blog_ux_spec.rb:30
+[0m[33m
+  2) Blog Page tries to write a blog without a title[0m
+     [36m# Temporarily skipped with xit[0m
+[36m     # ./spec/UX_tests/blog_ux_spec.rb:39
+[0m[33m
+  3) Blog Page tries to write a blog without a body[0m
+     [36m# Temporarily skipped with xit[0m
+[36m     # ./spec/UX_tests/blog_ux_spec.rb:47
+[0m
+
+Finished in 2 minutes 29.4 seconds (files took 5.66 seconds to load)
+[33m41 examples, 0 failures, 3 pending[0m
+

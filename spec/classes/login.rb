@@ -25,16 +25,16 @@ class Login < BaseClass
 
   def create_new_user(email, password, password_confirmation, name)
     email_field = find_element_with_wait(xpath: '//input[@id="user_email"]')
-    write_things(email_field, email)
+    type_things_out(email_field, email)
 
     password_field = find_element_with_wait(xpath: "//input[@id='user_password']")
-    write_things(password_field, password)
+    type_things_out(password_field, password)
 
     password_confirmation_field = find_element_with_wait(xpath: "//input[@id='user_password_confirmation']")
-    write_things(password_confirmation_field, password_confirmation)
+    type_things_out(password_confirmation_field, password_confirmation)
 
     name_field = find_element_with_wait(xpath: "//input[@id='user_name']")
-    write_things(name_field, name)
+    type_things_out(name_field, name)
   end
 
   def create_correct_user()
