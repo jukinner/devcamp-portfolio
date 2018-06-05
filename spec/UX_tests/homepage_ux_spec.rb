@@ -18,8 +18,18 @@ describe 'HomePage' do
     expect(@browser.welcome_message.displayed?).to eq(true)
   end
 
-  it 'navigates to about me page via nav bar' do
-    @browser.about_me_link()
+  # it 'navigates to about me page via nav bar' do
+  #   @browser.about_me_link()
+  #   expect(@browser.about_identifier.displayed?).to eq(true)
+  # end
+
+  it 'navigates to about me page via button' do
+    @browser.about_me_button()
     expect(@browser.about_identifier.displayed?).to eq(true)
+  end
+
+  it 'navigate to contact page' do
+    @browser.contact_link()
+    expect(@browser.contact_identifier.displayed?).to eq(true)
   end
 end
